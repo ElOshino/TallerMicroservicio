@@ -11,6 +11,8 @@ const {
 const { render } = require('../server');
 
 
+router.get('/', renderNoteForm);
+
 //new note
 router.get('/notes/add', renderNoteForm);
 

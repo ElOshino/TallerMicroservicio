@@ -3,8 +3,8 @@ const notesCtrl = {};
 const Note = require('../models/Note');
 const { request } = require('../server');
 
-notesCtrl.renderNoteForm = (req, res) => {
-    res.render('notes/new-note');
+notesCtrl.inicio = (req, res) => {
+    res.send('microservicio Arriba');
 };
 
 
