@@ -2,7 +2,7 @@ const { Router } = require('express');
 const router = Router();
 
 const { 
-    renderNoteForm, 
+    inicio, 
     createNewNote, 
     renderNotes, 
     renderEditForm, 
@@ -11,10 +11,7 @@ const {
 const { render } = require('../server');
 
 
-router.get('/', renderNoteForm);
-
-//new note
-router.get('/notes/add', renderNoteForm);
+router.get('/', inicio);
 
 router.post('/notes/new-note', createNewNote);
 
